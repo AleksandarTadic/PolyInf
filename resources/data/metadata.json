@@ -1,0 +1,362 @@
+[
+    {
+        "tip": "MYSQL",
+        "baza":{
+            "host":"localhost",
+            "port": 3306,
+            "user": "root",
+            "password": "root",
+            "database": "2023_nosql_baza_cinjenica"
+        },
+        "tip_naziv": "Relaciona skladišta",
+        "naziv": "Rukovalac heterogenim skladistima",
+        "ikonica": "resources/icons/mysql.png",
+        "podaci": {
+            "naziv": "Rukovalac heterogenim skladistima",
+            "paketi": [
+                {
+                    "naziv": "Organizaciona Struktura",
+                    "paketi": [
+                        {
+                            "naziv": "Ljudski resursi",
+                            "tabele": [
+                                {
+                                    "label": "Vrsta angazovanja",
+                                    "kod": "vrsta_angazovanja"
+                                },
+                                {
+                                    "label": "Poslovni subjekat",
+                                    "kod": "poslovni_subjekat"
+                                },
+                                {
+                                    "label": "Element znanja",
+                                    "kod": "element_znanja"
+                                },
+                                {
+                                    "label": "Ugovori o angažovanju",
+                                    "kod": "ugovori_o_angazovanju"
+                                },
+                                {
+                                    "label": "Ljudski resursi",
+                                    "kod": "ljudski_resursi"
+                                },
+                                {
+                                    "label": "Potrebne kompetencije",
+                                    "kod": "potrebne_kompetencije"
+                                },
+                                {
+                                    "label": "Organizacione jedinice",
+                                    "kod": "organizacione_jedinice"
+                                },
+                                {
+                                    "label": "Radna mesta",
+                                    "kod": "radna_mesta"
+                                }
+                            ]
+                        },
+                        {
+                            "naziv": "Organizaciona Struktura",
+                            "tabele": [
+                                {
+                                    "label": "Registar Delatnosti",
+                                    "kod": "registar_delatnosti"
+                                },
+                                {
+                                    "label": "Drzava",
+                                    "kod": "drzava"
+                                },
+                                {
+                                    "label": "Naseljeno mesto",
+                                    "kod": "naseljeno_mesto"
+                                },
+                                {
+                                    "label": "Vrsta Partnerstva",
+                                    "kod": "vrsta_partnerstva"
+                                },
+                                {
+                                    "label": "Registrovan za delatnost",
+                                    "kod": "registrovan_za_delatnost"
+                                },
+                                {
+                                    "label": "Poslovni Partneri",
+                                    "kod": "poslovni_partneri"
+                                },
+                                {
+                                    "label": "Poslovni subjekat",
+                                    "kod": "poslovni_subjekat"
+                                },
+                                {
+                                    "label": "Element znanja",
+                                    "kod": "element_znanja"
+                                },
+                                {
+                                    "label": "Profil kompetencija",
+                                    "kod": "profil_kompetencija"
+                                },
+                                {
+                                    "label": "Radna mesta",
+                                    "kod": "radna_mesta"
+                                },
+                                {
+                                    "label": "Organizacione jedinice",
+                                    "kod": "organizacione_jedinice"
+                                },
+                                {
+                                    "label": "Podrzane u",
+                                    "kod": "podrzane_u"
+                                },
+                                {
+                                    "label": "Potrebne kompetencije",
+                                    "kod": "potrebne_kompetencije"
+                                },
+                                {
+                                    "label": "Raspored po jedinicama",
+                                    "kod": "raspored_po_jedinicama"
+                                },
+                                {
+                                    "label": "Unutrasnja organizacija",
+                                    "kod": "unutrasnja_organizacija"
+                                }
+
+                            ]
+                        }
+                    ],
+                    "tabele": [
+
+                    ]
+                },
+                {
+                    "naziv": "Razvoj Softvera",
+                    "tabele": [
+                        {
+                            "label": "Aktivnosti u etapi",
+                            "kod": "aktivnosti_u_etapi"
+                        },
+                        {
+                            "label": "Dodeljena",
+                            "kod": "dodeljena"
+                        },
+                        {
+                            "label": "Etape u projektu",
+                            "kod": "etape_u_projektu"
+                        },
+                        {
+                            "label": "Katalog aktivnosti",
+                            "kod": "katalog_aktivnosti"
+                        },
+                        {
+                            "label": "Kompetencije za aktivnost",
+                            "kod": "kompetencije_za_aktivnost"
+                        },
+                        {
+                            "label": "Konfiguracija",
+                            "kod": "konfiguracija"
+                        },
+                        {
+                            "label": "Mapa kompetencija",
+                            "kod": "mapa_kompetencija"
+                        },
+                        {
+                            "label": "Proizvodi u etapi",
+                            "kod": "proizvodi_u_etapi"
+                        },
+                        {
+                            "label": "Projekat realizacije softvera",
+                            "kod": "projekat_realizacije_softvera"
+                        },
+                        {
+                            "label": "Sastav",
+                            "kod": "sastav"
+                        },
+                        {
+                            "label": "Sastav u verziji",
+                            "kod": "sastav__u_verziji"
+                        },
+                        {
+                            "label": "Softverski proces",
+                            "kod": "softverski_proces"
+                        },
+                        {
+                            "label": "Softverski proizvod",
+                            "kod": "softverski_proizvod"
+                        },
+                        {
+                            "label": "Struktura aktivnosti",
+                            "kod": "struktura_aktivnosti"
+                        },
+                        {
+                            "label": "Struktura procesa",
+                            "kod": "struktura_procesa"
+                        },
+                        {
+                            "label": "Tip projekta",
+                            "kod": "tip_projekta"
+                        },
+                        {
+                            "label": "Verzija",
+                            "kod": "verzija"
+                        },
+                        {
+                            "label":  "Šta je predmet projekta",
+                            "kod": "sta_je_predmet_projekta"
+                        },
+                        {
+                            "label": "Šta se predaje u aktivnosti",
+                            "kod": "sta_se_predaje_u_aktivnosti"
+                        }
+                    ]
+                },
+                {
+                    "naziv": "Inženjerstvo Zahteva",
+                    "tabele": [
+                        {
+                            "label": "Domen zahteva",
+                            "kod": "domen_zahteva"
+                        },
+                        {
+                            "label": "Klasifikator",
+                            "kod": "klasifikator"
+                        },
+                        {
+                            "label": "Ko se pita",
+                            "kod": "ko_se_pita"
+                        },
+                        {
+                            "label": "Prioritet",
+                            "kod": "prioritet"
+                        },
+                        {
+                            "label": "Projektni zahtevi",
+                            "kod": "projektni_zahtevi"
+                        },
+                        {
+                            "label": "Status zahteva",
+                            "kod": "status_zahteva"
+                        },
+                        {
+                            "label": "Uloge",
+                            "kod": "uloge"
+                        },
+                        {
+                            "label": "Zainteresovane strane",
+                            "kod": "zainteresovane_strane"
+                        }
+                    ]
+                },
+                {
+                    "naziv": "Plasman i održavanje softvera",
+                    "tabele": [
+                        {
+                            "label": "Isporuceno",
+                            "kod": "isporuceno"
+                        },
+                        {
+                            "label": "Plasman konfiguracije",
+                            "kod": "plasman_konfiguracije"
+                        }
+
+                    ]
+                },
+                {
+                    "naziv": "Korpus Znanja i Edukacija",
+                    "tabele": [
+                        {
+                            "label": "Element znanja",
+                            "kod": "element_znanja"
+                        },
+                        {
+                            "label": "Korpus znanja",
+                            "kod": "korpus_znanja"
+                        },
+                        {
+                            "label": "Oblast znanja",
+                            "kod": "oblast_znanja"
+                        },
+                        {
+                            "label": "Povezani korpusi znanja",
+                            "kod": "povezani_korpusi_znanja"
+                        },
+                        {
+                            "label": "Segment znanja",
+                            "kod": "segment_znanja"
+                        },
+                        {
+                            "label": "Vezane discipline",
+                            "kod": "vezane_discipline"
+                        },
+                        {
+                            "label": "Vezani elementi",
+                            "kod": "vezani_elementi"
+                        },
+                        {
+                            "label": "Vezani segmenti",
+                            "kod": "vezani_segmenti"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "tip": "MongoDB",
+        "naziv": "MongoDB",
+        "baza":{
+            "host":"localhost",
+            "port": 27017,
+            "user": "root",
+            "password": "root",
+            "database": "rukovalac_heterogenim_skladistima"
+        },
+        "tip_naziv": "Dokument skladišta",
+        "ikonica": "resources/icons/mongo.png",
+        "podaci": {
+            "naziv": "Rukovalac heterogenim skladistima MONGO",
+            "paketi": [
+                {
+                    "naziv":"Personalni Zadaci",
+                    "paketi":[
+
+                    ],
+                    "tabele":[
+                        {
+                            "label": "Personalni Zadatak Isporuceno",
+                            "kod": "personalni_zadatak"
+                        }
+                    ]
+
+                }
+            ]
+        }
+    },
+    {
+        "tip": "ArangoDB",
+        "naziv": "ArangoDB",
+        "baza":{
+            "host":"localhost",
+            "port": 8529,
+            "user": "root",
+            "password": "root",
+            "database": "2023_nosql_baza_cinjenica"
+        },
+        "tip_naziv": "Graf skladišta",
+        "ikonica": "resources/icons/arango.png",
+        "podaci": {
+            "naziv": "Rukovalac heterogenim skladistima",
+            "paketi": [
+                {
+                    "naziv":"Arango Web",
+                    "paketi":[
+
+                    ],
+                    "tabele":[
+                        {
+                            "label": "Arango WEB Interface",
+                            "kod": "arango_web_interface"
+                        }
+                    ]
+
+                }
+            ]
+        }
+    }
+]

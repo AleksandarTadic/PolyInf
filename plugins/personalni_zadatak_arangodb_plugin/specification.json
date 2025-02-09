@@ -1,0 +1,15 @@
+{
+    "id": 1235,
+    "name": "ArangoDB Personalni zadatak Isporuceno",
+    "authors": [{
+        "name": "Aleksandar Tadic",
+        "email": "aleksandar.tadic.18@singimail.rs",
+        "web_page": "INVALID URL"
+    }],
+    "version": "1.0.0",
+    "core_version": "1.0.0",
+    "category": "ArangoDB",
+    "description": "Personalni zadatak, poziv mysql procedure i ubacivanje podataka u ArangoDB.",
+    "web_page": "INVALID URL",
+    "dependencies": []
+}

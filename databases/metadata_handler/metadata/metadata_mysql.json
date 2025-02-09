@@ -1,0 +1,3893 @@
+[
+    {   
+        "title": "Vrsta partnerstva",
+        "name": "vrsta_partnerstva",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "VP_ID",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "VP_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 40,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Vrsta angazovanja",
+        "name": "vrsta_angazovanja",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "VA_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "VA_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 80,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Uloge",
+        "name": "uloge",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "ULO_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 3,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "ULO_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Tip projekta",
+        "name": "tip_projekta",
+        "columns": [
+            {
+                "label": "Tip Kod",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "TIPP_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Status zahteva",
+        "name": "status_zahteva",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "ISTAT_ID",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "ISTAT_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 40,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Prioritet",
+        "name": "prioritet",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "PRIOR_ID",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "PRIOR_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 40,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Domen zahteva",
+        "name": "domen_zahteva",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "DZ_ID",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "DZ_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 80,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {
+        "title": "Drzava",
+        "name": "drzava",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "DR_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {
+        "title": "Katalog aktivnosti",
+        "name": "katalog_aktivnosti",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "AKT_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 240,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {
+        "title": "Klasifikator",
+        "name": "klasifikator",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KAT_ID",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "KAT_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": true
+            }
+        ],
+        "linked_keys": []
+    },
+    {   
+        "title": "Korpus znanja",
+        "name": "korpus_znanja",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "KZ_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 180,
+                "required": true
+            },
+            {
+                "label": "Skracenica",
+                "code": "KZ_SKRACENICA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 10,
+                "required": false
+            },
+            {
+                "label": "Web Link",
+                "code": "KZ_WEB_LINK",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": false
+            },
+            {
+                "label": "Opis",
+                "code": "KZ_OPIS",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1024,
+                "required": false
+            }
+        ],
+        "linked_keys": []
+    },
+    {
+        "title": "Naseljeno mesto",
+        "name": "naseljeno_mesto",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "id",
+                "code": "NM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "NM_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 40,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Drzava",
+                "name": "drzava",
+                "foreign_key": ["DR_OZNAKA"],
+                "primary_key": ["DR_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Oblast znanja",
+        "name": "oblast_znanja",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "KA_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 180,
+                "required": true
+            },
+            {
+                "label": "Opis",
+                "code": "KA_OPIS",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1024,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Korpus znanja",
+                "name": "korpus_znanja",
+                "foreign_key": ["KZ_IDENT"],
+                "primary_key": ["KZ_IDENT"]
+            }
+        ]
+    },
+    {
+        "title": "Registar delatnosti",
+        "name": "registar_delatnosti",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "REGD_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "REGD_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Drzava",
+                "name": "drzava",
+                "foreign_key": ["DR_OZNAKA"],
+                "primary_key": ["DR_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Segment znanja",
+        "name": "segment_znanja",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "SO_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 160,
+                "required": true
+            },
+            {
+                "label": "Opis",
+                "code": "SO_OPIS",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1024,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Oblast znanja",
+                "name": "oblast_znanja",
+                "foreign_key": ["KZ_IDENT","KA_OBLAST"],
+                "primary_key": ["KZ_IDENT","KA_OBLAST"]
+            }
+        ]
+    },
+    {
+        "title": "Sastav u verziji",
+        "name": "sastav__u_verziji",
+        "columns": [
+            {
+                "label": "STR AKT Oznaka",
+                "code": "STR_AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Verzija",
+                "code": "AKT_VERZIJA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Struktura aktivnosti",
+                "name": "struktura_aktivnosti",
+                "foreign_key": ["STR_AKT_OZNAKA", "AKT_VERZIJA"],
+                "primary_key": ["AKT_OZNAKA", "AKT_VERZIJA"]
+            },
+            {
+                "title": "Katalog aktivnosti",
+                "name": "katalog_aktivnosti",
+                "foreign_key": ["AKT_OZNAKA"],
+                "primary_key": ["AKT_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Povezani korpusi znanja",
+        "name": "povezani_korpusi_znanja",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Korpus ID",
+                "code": "KOR_KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Korpus znanja",
+                "name": "korpus_znanja",
+                "foreign_key": ["KZ_IDENT"],
+                "primary_key": ["KZ_IDENT"]
+            },
+            {
+                "title": "Korpus znanja",
+                "name": "korpus_znanja",
+                "foreign_key": ["KOR_KZ_IDENT"],
+                "primary_key": ["KZ_IDENT"]
+            }
+        ]
+    },
+    {
+        "title": "Poslovni partneri",
+        "name": "poslovni_partneri",
+        "columns": [
+            {
+                "label": "Drzava Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Poslovni Subjekat Oznaka Drzave",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "Poslovni Subjekat ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Vrsta partnerstva ID",
+                "code": "VP_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Partnerstvo od",
+                "code": "PAR_OD",
+                "primary_key": true,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Partnerstvo do",
+                "code": "PAR_DO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Vrsta partnerstva",
+                "name": "vrsta_partnerstva",
+                "foreign_key": ["VP_ID"],
+                "primary_key": ["VP_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Struktura aktivnosti",
+        "name": "struktura_aktivnosti",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Verzija",
+                "code": "AKT_VERZIJA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Datum",
+                "code": "AKT_DATFORM",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Katalog aktivnosti",
+                "name": "katalog_aktivnosti",
+                "foreign_key": ["AKT_OZNAKA"],
+                "primary_key": ["AKT_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Ljudski resursi",
+        "name": "ljudski_resursi",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Prezime",
+                "code": "LJ_PREZIME",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 12,
+                "required": true
+            },
+            {
+                "label": "Ime Roditelja",
+                "code": "LJ_IME_RODITELJA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 12,
+                "required": false
+            },
+            {
+                "label": "Ime",
+                "code": "LJ_IME",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 12,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Radna mesta",
+        "name": "radna_mesta",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "RM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "RM_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 80,
+                "required": true
+            },
+            {
+                "label": "Norm",
+                "code": "RM_NORM",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Softverski proces",
+        "name": "softverski_proces",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID Procesa",
+                "code": "ID_PROCESA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "PROC_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Plasman konfiguracije",
+        "name": "plasman_konfiguracije",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Godina",
+                "code": "PLA_GODINA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            },
+            {
+                "label": "Broj plasmana",
+                "code": "PLA_BROJ_PLASMANA",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "POS Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Datum",
+                "code": "PLA_DATUM_UG",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Element znanja",
+        "name": "element_znanja",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "EZ_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 160,
+                "required": true
+            },
+            {
+                "label": "Opis",
+                "code": "EZ_OPIS",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1024,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Segment znanja",
+                "name": "segment_znanja",
+                "foreign_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Registrovan za delatnost",
+        "name": "registrovan_za_delatnost",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "REGD ID",
+                "code": "REGD_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Datum Registracije",
+                "code": "REG_DATUM_REG",
+                "primary_key": true,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Registrovan do kada",
+                "code": "REG_DO_KADA",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Registar delatnosti",
+                "name": "registar_delatnosti",
+                "foreign_key": ["DR_OZNAKA", "REGD_ID"],
+                "primary_key": ["DR_OZNAKA", "REGD_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Struktura procesa",
+        "name": "struktura_procesa",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID Procesa",
+                "code": "ID_PROCESA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "AKT Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "AKT Verzija",
+                "code": "AKT_VERZIJA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Softverski proces",
+                "name": "softverski_proces",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "ID_PROCESA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "ID_PROCESA"]
+            },
+            {
+                "title": "Struktura aktivnosti",
+                "name": "struktura_aktivnosti",
+                "foreign_key": ["AKT_OZNAKA", "AKT_VERZIJA"],
+                "primary_key": ["AKT_OZNAKA", "AKT_VERZIJA"]
+            }
+        ]
+    },
+    {
+        "title": "Poslovni subjekat",
+        "name": "poslovni_subjekat",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "PS Naziv",
+                "code": "PS_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            },
+            {
+                "label": "NM ID",
+                "code": "NM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Adresa",
+                "code": "PS_ADRESA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": true
+            },
+            {
+                "label": "WWW",
+                "code": "PS_WWW",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": false
+            },
+            {
+                "label": "POS Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": false
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Drzava",
+                "name": "drzava",
+                "foreign_key": ["DR_OZNAKA"],
+                "primary_key": ["DR_OZNAKA"]
+            },
+            {
+                "title": "Naseljeno mesto",
+                "name": "naseljeno_mesto",
+                "foreign_key": ["DR_OZNAKA", "NM_ID"],
+                "primary_key": ["DR_OZNAKA", "NM_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Organizacione jedinice",
+        "name": "organizacione_jedinice",
+        "columns": [
+            {
+                "label": "Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "OJ_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            },
+            {
+                "label": "NAS Oznaka",
+                "code": "NAS_DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": false
+            },
+            {
+                "label": "NM ID",
+                "code": "NM_ID",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Adresa",
+                "code": "OJ_ADRESA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 60,
+                "required": true
+            },
+            {
+                "label": "Pravno Lice",
+                "code": "OJ_PRAVNO_LICE",
+                "primary_key": false,
+                "type": "boolean",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Naseljeno mesto",
+                "name": "naseljeno_mesto",
+                "foreign_key": ["NAS_DR_OZNAKA", "NM_ID"],
+                "primary_key": ["DR_OZNAKA", "NM_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Unitrasnja organizacija",
+        "name": "unutrasnja_organizacija",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "ORG_OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Broj",
+                "code": "SLJ_BROJ",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oznaka",
+                "code": "ORG_DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "OJ ID",
+                "code": "OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Od",
+                "code": "SLJ_OD",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Do",
+                "code": "SLJ_DO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Naseljeno mesto",
+                "name": "naseljeno_mesto",
+                "foreign_key": ["NAS_DR_OZNAKA", "NM_ID"],
+                "primary_key": ["DR_OZNAKA", "NM_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Softverski proizvod",
+        "name": "softverski_proizvod",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Katbr",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "SPR_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 240,
+                "required": true
+            },
+            {
+                "label": "Datum katalogiziranja",
+                "code": "DATUM_KATALOGIZIRANJA",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Datum obustavljanja",
+                "code": "DATUM_OBUSTAVLJANJA",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "POS DR Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": false
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "PS ID",
+                "code": "SPR_STATUS",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Raspored po jedinicama",
+        "name": "raspored_po_jedinicama",
+        "columns": [
+            {
+                "label": "ORG DR Oznaka",
+                "code": "ORG_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "OJ ID",
+                "code": "OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Drzava Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "RM ID",
+                "code": "RM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "OJ NORM",
+                "code": "OJ_NORM",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Organizacione jedinice",
+                "name": "organizacione_jedinice",
+                "foreign_key": ["ORG_DR_OZNAKA", "PS_ID", "OJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "OJ_ID"]
+            },
+            {
+                "title": "Radna mesta",
+                "name": "radna_mesta",
+                "foreign_key": ["ORG_DR_OZNAKA", "PS_ID", "RM_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "RM_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Konfiguracija",
+        "name": "konfiguracija",
+        "columns": [
+            {
+                "label": "SOF DR Oznaka",
+                "code": "SOF_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SPR KATBR",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "SPR TIP",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "VER Oznaka",
+                "code": "VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "KONF_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "KONF_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 240,
+                "required": true
+            },
+            {
+                "label": "Isporuceno",
+                "code": "KONF_ISPOR",
+                "primary_key": true,
+                "type": "boolean",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Verzija",
+                "name": "verzija",
+                "foreign_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"],
+                "primary_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Verzija",
+        "name": "verzija",
+        "columns": [
+            {
+                "label": "SOF DR Oznaka",
+                "code": "SOF_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SPR KATBR",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "SPR TIP",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "VER Oznaka",
+                "code": "VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": false
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "VER DATFORM",
+                "code": "VER_DATFORM",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "VER DATUK",
+                "code": "VER_DATUK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Softverski proizvod",
+                "name": "softverski_proizvod",
+                "foreign_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP"],
+                "primary_key": ["DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Vezane discipline",
+        "name": "vezane_discipline",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Redni broj",
+                "code": "POV_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "OBL KZ ID",
+                "code": "OBL_KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Korpus znanja",
+                "name": "korpus_znanja",
+                "foreign_key": ["KZ_IDENT"],
+                "primary_key": ["KZ_IDENT"]
+            },
+            {
+                "title": "Oblast znanja",
+                "name": "oblast_znanja",
+                "foreign_key": ["OBL_KZ_IDENT", "KA_OBLAST"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST"]
+            }
+        ]
+    },
+    {
+        "title": "Vezani segmenti",
+        "name": "vezani_segmenti",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "POV Redni broj",
+                "code": "POV_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Redni broj",
+                "code": "PSE_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SEG KZ ID",
+                "code": "SEG_KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Vezane discipline",
+                "name": "vezane_discipline",
+                "foreign_key": ["KZ_IDENT", "POV_RBR"],
+                "primary_key": ["KZ_IDENT", "POV_RBR"]
+            },
+            {
+                "title": "Segment znanja",
+                "name": "segment_znanja",
+                "foreign_key": ["SEG_KZ_IDENT", "KA_OBLAST", "SO_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Vezani elementi",
+        "name": "vezani_elementi",
+        "columns": [
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "POV Redni broj",
+                "code": "POV_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "PSE Redni broj",
+                "code": "PSE_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "POE Redni broj",
+                "code": "POE_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ELE KZ ID",
+                "code": "ELE_KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Vezani segmenti",
+                "name": "vezani_segmenti",
+                "foreign_key": ["KZ_IDENT", "POV_RBR", "PSE_RBR"],
+                "primary_key": ["KZ_IDENT", "POV_RBR", "PSE_RBR"]
+            },
+            {
+                "title": "Element znanja",
+                "name": "element_znanja",
+                "foreign_key": ["ELE_KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Potrebne kompetencije",
+        "name": "potrebne_kompetencije",
+        "columns": [
+            {
+                "label": "DR OZNAKA",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "RM ID",
+                "code": "RM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KZ Ident",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KA Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "Minimalni Nivo",
+                "code": "POTR_MININIVO",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            },
+            {
+                "label": "Maksimalni Nivo",
+                "code": "POTR_MAKSNIVO",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Radna mesta",
+                "name": "radna_mesta",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "RM_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "RM_ID"]
+            },
+            {
+                "title": "Element znanja",
+                "name": "element_znanja",
+                "foreign_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Kompetencije za aktivnost",
+        "name": "kompetencije_za_aktivnost",
+        "columns": [
+            {
+                "label": "OZNAKA",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "KOMP",
+                "code": "AKT_KOMP",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "Minimalni Nivo",
+                "code": "AKT_NIVO_MIN",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            },
+            {
+                "label": "Maksimalni Nivo",
+                "code": "AKT_NIVO_MAX",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Katalog aktivnosti",
+                "name": "katalog_aktivnosti",
+                "foreign_key": ["AKT_OZNAKA"],
+                "primary_key": ["AKT_OZNAKA"]
+            },
+            {
+                "title": "Element znanja",
+                "name": "element_znanja",
+                "foreign_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Podrzane u",
+        "name": "podrzane_u",
+        "columns": [
+            {
+                "label": "ORG DR Oznaka",
+                "code": "ORG_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "OJ ID",
+                "code": "OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "REG DR Oznaka",
+                "code": "REG_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "REGD ID",
+                "code": "REGD_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "REG Datum Registracije",
+                "code": "REG_DATUM_REG",
+                "primary_key": true,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Od",
+                "code": "UOJ_OD",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Do",
+                "code": "UOJ_DO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Organizacione jedinice",
+                "name": "organizacione_jedinice",
+                "foreign_key": ["ORG_DR_OZNAKA", "PS_ID", "OJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "OJ_ID"]
+            },
+            {
+                "title": "Registrovan za delatnost",
+                "name": "registrovan_za_delatnost",
+                "foreign_key": ["ORG_DR_OZNAKA", "PS_ID", "REGD_ID", "REG_DATUM_REG"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "REGD_ID", "REG_DATUM_REG"]
+            }
+        ]
+    },
+    {
+        "title": "Sastav",
+        "name": "sastav",
+        "columns": [
+            {
+                "label": "SOF DR Oznaka",
+                "code": "SOF_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KON SPR KATBR",
+                "code": "KON_SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "KON SPR Tip",
+                "code": "KON_SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "KON VER Oznaka",
+                "code": "KON_VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KONF ID",
+                "code": "KONF_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Sastav Redni Broj",
+                "code": "SASTAV_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "VER SOF DR OZNAKA",
+                "code": "VER_SOF_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "VER POS PS ID",
+                "code": "VER_POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SPR KATBR",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "SPR Tip",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "VER Oznaka",
+                "code": "VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Konfiguracija",
+                "name": "konfiguracija",
+                "foreign_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "KON_SPR_KATBR", "KON_SPR_TIP", "KON_VER_OZNAKA", "KONF_ID"],
+                "primary_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA", "KONF_ID"]
+            },
+            {
+                "title": "Verzija",
+                "name": "verzija",
+                "foreign_key": ["VER_SOF_DR_OZNAKA", "VER_POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"],
+                "primary_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Zainteresovane strane",
+        "name": "zainteresovane_strane",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ID",
+                "code": "ZAIN_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "ZAIN_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Uloge Oznaka",
+                "code": "ULO_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 3,
+                "required": false
+            },
+            {
+                "label": "POS DR Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 4,
+                "required": false
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Personalni",
+                "code": "ZAIN_PERSONALNI",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 40,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Uloge",
+                "name": "uloge",
+                "foreign_key": ["ULO_OZNAKA"],
+                "primary_key": ["ULO_OZNAKA"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Proizvodi u etapi",
+        "name": "proizvodi_u_etapi",
+        "columns": [
+            {
+                "label": "ETA DR Oznaka",
+                "code": "ETA_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "ETA PS ID",
+                "code": "ETA_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "STA SPR KATBR",
+                "code": "STA_SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "STA SPR TIP",
+                "code": "STA_SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "STA VER Oznaka",
+                "code": "STA_VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Etape u projektu",
+                "name": "etape_u_projektu",
+                "foreign_key": ["ETA_DR_OZNAKA", "ETA_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID"]
+            },
+            {
+                "title": "Sta je predmet projekta",
+                "name": "sta_je_predmet_projekta",
+                "foreign_key": ["ETA_DR_OZNAKA", "ETA_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "STA_SPR_KATBR", "STA_SPR_TIP", "STA_VER_OZNAKA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Sta je predmet projekta",
+        "name": "sta_je_predmet_projekta",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SPR KATBR",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "SPR TIP",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "VER Oznaka",
+                "code": "VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Projekat realizacije softvera",
+                "name": "projekat_realizacije_softvera",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"]
+            },
+            {
+                "title": "Verzija",
+                "name": "verzija",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"],
+                "primary_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Projekat realizacije softvera",
+        "name": "projekat_realizacije_softvera",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Naziv",
+                "code": "PROJ_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 240,
+                "required": true
+            },
+            {
+                "label": "Datum Pokretanja",
+                "code": "PROJ_DATPOKR",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Datum Okoncan",
+                "code": "PROJ_DATOKON",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Stvarni Pocetak",
+                "code": "PROJ_STVARNI_POCETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Stvarni Zavrsetak",
+                "code": "PROJ_STVARNI_ZAVRSETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "ID Procesa",
+                "code": "ID_PROCESA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Softverski proces",
+                "name": "softverski_proces",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "ID_PROCESA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "ID_PROCESA"]
+            },
+            {
+                "title": "Tip projekta",
+                "name": "tip_projekta",
+                "foreign_key": ["TIPP_D"],
+                "primary_key": ["TIPP_D"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Aktivnosti u etapi",
+        "name": "aktivnosti_u_etapi",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "AKT Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Redni broj",
+                "code": "AKTET_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Planski Pocetak",
+                "code": "AKTET_PLANSKI_POCETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Planski Zavrsetak",
+                "code": "AKTET_PLANSKI_ZAVRSETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Stvarni Pocetak",
+                "code": "AKTET_STVARNI_POCETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Stvarni Zavrsetak",
+                "code": "AKTET_STVARNI_ZAVRSETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Etape u projektu",
+                "name": "etape_u_projektu",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID"]
+            },
+            {
+                "title": "Katalog aktivnosti",
+                "name": "katalog_aktivnosti",
+                "foreign_key": ["AKT_OZNAKA"],
+                "primary_key": ["AKT_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Dodeljena",
+        "name": "dodeljena",
+        "columns": [
+            {
+                "label": "AKT DR Oznaka",
+                "code": "AKT_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "AKT PS ID",
+                "code": "AKT_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "AKT Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Redni broj",
+                "code": "AKTET_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Broj Dodele",
+                "code": "DOD_BROJ_DODELE",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "LJ ID",
+                "code": "LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Od",
+                "code": "DOD_OD",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Do",
+                "code": "DOD_DO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Aktivnosti u etapi",
+                "name": "aktivnosti_u_etapi",
+                "foreign_key": ["AKT_DR_OZNAKA", "AKT_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "AKT_OZNAKA", "AKTET_RBR"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "AKT_OZNAKA", "AKTET_RBR"]
+            },
+            {
+                "title": "Ljudski resursi",
+                "name": "ljudski_resursi",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Etape u projektu",
+        "name": "etape_u_projektu",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Planirani Pocetak",
+                "code": "ETAP_PLANIRANI_POCETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Planirani Zavrsetak",
+                "code": "ETAP_PLANIRANI_ZAVRSETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Stvarni Pocetak",
+                "code": "ETAP_STVARNI_POCETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Stvarni Zavrsetak",
+                "code": "ETAP_STVARNI_ZAVRSETAK",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Projekat realizacije softvera",
+                "name": "projekat_realizacije_softvera",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"]
+            }
+        ]
+    },
+    {
+        "title": "Mapa kompetencija",
+        "name": "mapa_kompetencija",
+        "columns": [
+            {
+                "label": "AKT DR Oznaka",
+                "code": "AKT_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "AKT PS ID",
+                "code": "AKT_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "AKT Oznaka",
+                "code": "AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "AKTET Redni Broj",
+                "code": "AKTET_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DOD Broj Dodele",
+                "code": "DOD_BROJ_DODELE",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KZ Ident",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KA Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "MAP Vrednost",
+                "code": "MAP_VREDNOST",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Dodeljena",
+                "name": "dodeljena",
+                "foreign_key": ["AKT_DR_OZNAKA", "AKT_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "AKT_OZNAKA", "AKTET_RBR", "DOD_BROJ_DODELE"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "AKT_OZNAKA", "AKTET_RBR", "DOD_BROJ_DODELE"]
+            },
+            {
+                "title": "Element znanja",
+                "name": "element_znanja",
+                "foreign_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Sta se predaje u aktivnosti",
+        "name": "sta_se_predaje_u_aktivnosti",
+        "columns": [
+            {
+                "label": "AKT DR Oznaka",
+                "code": "AKT_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "AKT PS ID",
+                "code": "AKT_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Tip",
+                "code": "AKT_TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Projekat ID",
+                "code": "AKT_PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Projekat Revizija",
+                "code": "AKT_PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Etapa ID",
+                "code": "AKT_ETAPA_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "AKT Oznaka",
+                "code": "AKT_AKT_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "AKTET Redni Broj",
+                "code": "AKT_AKTET_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "PRO STA SPR KATBR",
+                "code": "PRO_STA_SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "PRO STA SPR Tip",
+                "code": "PRO_STA_SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "STA VER Oznaka",
+                "code": "STA_VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Aktivnosti u etapi",
+                "name": "aktivnosti_u_etapi",
+                "foreign_key": ["AKT_DR_OZNAKA", "AKT_PS_ID", "AKT_TIPP_D", "AKT_PROJ_ID", "AKT_PROJ_REVIZIJA", "AKT_ETAPA_ID", "AKT_AKT_OZNAKA", "AKT_AKTET_RBR"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "AKT_OZNAKA", "AKTET_RBR"]
+            },
+            {
+                "title": "Proizvodi u etapi",
+                "name": "proizvodi_u_etapi",
+                "foreign_key": ["AKT_DR_OZNAKA", "AKT_PS_ID", "AKT_TIPP_D", "AKT_PROJ_ID", "AKT_PROJ_REVIZIJA", "AKT_ETAPA_ID", "PRO_STA_SPR_KATBR", "PRO_STA_SPR_TIP", "STA_VER_OZNAKA"],
+                "primary_key": ["ETA_DR_OZNAKA", "ETA_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "ETAPA_ID", "STA_SPR_KATBR", "STA_SPR_TIP", "STA_VER_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Profil kompetencija",
+        "name": "profil_kompetencija",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "LJ ID",
+                "code": "LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Redni broj",
+                "code": "KOMP_RBR",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KZ Ident",
+                "code": "KZ_IDENT",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KA Oblast",
+                "code": "KA_OBLAST",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "SO Oznaka",
+                "code": "SO_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "EZ Oznaka",
+                "code": "EZ_OZNAKA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 2.0,
+                "required": true
+            },
+            {
+                "label": "DAT VRED",
+                "code": "KOMP_DAT_VRED",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Ocena",
+                "code": "KOMP_OCENA",
+                "primary_key": false,
+                "type": "decimal",
+                "max_lenght": 3.2,
+                "required": true
+            },
+            {
+                "label": "LJU LJ ID",
+                "code": "LJU_LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Current",
+                "code": "KOMP_CURRENT",
+                "primary_key": false,
+                "type": "boolean",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Ljudski resursi",
+                "name": "ljudski_resursi",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"]
+            },
+            {
+                "title": "Ljudski resursi",
+                "name": "ljudski_resursi",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "LJU_LJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"]
+            },
+            {
+                "title": "Element znanja",
+                "name": "element_znanja",
+                "foreign_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"],
+                "primary_key": ["KZ_IDENT", "KA_OBLAST", "SO_OZNAKA", "EZ_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Projektni zahtevi",
+        "name": "projektni_zahtevi",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "TIP D",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Proj ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Proj Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DZ ID",
+                "code": "DZ_ID",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ZAHTEV ID",
+                "code": "ZAHTEV_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ZAHTEV VERZIJA",
+                "code": "ZAHTEV_VERZIJA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DAT VRED",
+                "code": "ZAHTEV_NAZIV",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 120,
+                "required": true
+            },
+            {
+                "label": "Opis",
+                "code": "ZAHTEV_OPIS",
+                "primary_key": false,
+                "type": "int",
+                "max_lenght": 7000,
+                "required": false
+            },
+            {
+                "label": "KAT ID",
+                "code": "KAT_ID",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1,
+                "required": false
+            },
+            {
+                "label": "Prior ID",
+                "code": "PRIOR_ID",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1,
+                "required": false
+            },
+            {
+                "label": "ISTAT ID",
+                "code": "ISTAT_ID",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 1,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Projekat realizacije softvera",
+                "name": "projekat_realizacije_softvera",
+                "foreign_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA"]
+            },
+            {
+                "title": "Domen zahteva",
+                "name": "domen_zahteva",
+                "foreign_key": ["DZ_ID"],
+                "primary_key": ["DZ_ID"]
+            },
+            {
+                "title": "Klasifikator",
+                "name": "klasifikator",
+                "foreign_key": ["KAT_ID"],
+                "primary_key": ["KAT_ID"]
+            },
+            {
+                "title": "Prioritet",
+                "name": "prioritet",
+                "foreign_key": ["PRIOR_ID"],
+                "primary_key": ["PRIOR_ID"]
+            },
+            {
+                "title": "Status zahteva",
+                "name": "status_zahteva",
+                "foreign_key": ["ISTAT_ID"],
+                "primary_key": ["ISTAT_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Ko se pita",
+        "name": "ko_se_pita",
+        "columns": [
+            {
+                "label": "PRO DR Oznaka",
+                "code": "PRO_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PRO PS ID",
+                "code": "PRO_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "TIP D",
+                "code": "TIPP_D",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "Proj ID",
+                "code": "PROJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Proj Revizija",
+                "code": "PROJ_REVIZIJA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "DZ ID",
+                "code": "DZ_ID",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ZAHTEV ID",
+                "code": "ZAHTEV_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ZAHTEV VERZIJA",
+                "code": "ZAHTEV_VERZIJA",
+                "primary_key": true,
+                "type": "smallint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "ZAIN ID",
+                "code": "ZAIN_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Ocena",
+                "code": "ZAIN_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "ULO Oznaka",
+                "code": "ULO_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 3,
+                "required": true
+            },
+            {
+                "label": "Komentar",
+                "code": "KOM_KOMENTAR",
+                "primary_key": false,
+                "type": "str",
+                "max_lenght": 600,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Projektni zahtevi",
+                "name": "projektni_zahtevi",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "DZ_ID", "ZAHTEV_ID", "ZAHTEV_VERZIJA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "TIPP_D", "PROJ_ID", "PROJ_REVIZIJA", "DZ_ID", "ZAHTEV_ID", "ZAHTEV_VERZIJA"]
+            },
+            {
+                "title": "Zainteresovane strane",
+                "name": "zainteresovane_strane",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "ZAIN_ID", "ZAIN_TIP"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "ZAIN_ID", "ZAIN_TIP"]
+            },
+            {
+                "title": "Uloge",
+                "name": "uloge",
+                "foreign_key": ["ULO_OZNAKA"],
+                "primary_key": ["ULO_OZNAKA"]
+            }
+        ]
+    },
+    {
+        "title": "Ugovori o angazovanju",
+        "name": "ugovori_o_angazovanju",
+        "columns": [
+            {
+                "label": "POS DR Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Godina",
+                "code": "EA_GODINA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            },
+            {
+                "label": "Proj ID",
+                "code": "EA_EBROJ",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            },
+            {
+                "label": "LJ ID",
+                "code": "LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "VA Oznaka",
+                "code": "VA_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 2,
+                "required": true
+            },
+            {
+                "label": "Datum Ugovora",
+                "code": "EA_DATUM_UGOVORA",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Period od",
+                "code": "EA_PERIOD_OD",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Period do",
+                "code": "EA_PERIOD_DO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "OJ ID",
+                "code": "OJ_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "RM ID",
+                "code": "RM_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "LJU LJ ID",
+                "code": "LJU_LJ_ID",
+                "primary_key": true,
+                "type": "bigint",
+                "max_lenght": null,
+                "required": true
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "POS_PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            },
+            {
+                "title": "Ljudski resursi",
+                "name": "ljudski_resursi",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "LJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"]
+            },
+            {
+                "title": "Ljudski resursi",
+                "name": "ljudski_resursi",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "LJU_LJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "LJ_ID"]
+            },
+            {
+                "title": "Radna mesta",
+                "name": "radna_mesta",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "RM_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "RM_ID"]
+            },
+            {
+                "title": "Vrsta angazovanja",
+                "name": "vrsta_angazovanja",
+                "foreign_key": ["VA_OZNAKA"],
+                "primary_key": ["VA_OZNAKA"]
+            },
+            {
+                "title": "Organizacione jedinice",
+                "name": "organizacione_jedinice",
+                "foreign_key": ["PRO_DR_OZNAKA", "PRO_PS_ID", "OJ_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "OJ_ID"]
+            }
+        ]
+    },
+    {
+        "title": "Isporuceno",
+        "name": "isporuceno",
+        "columns": [
+            {
+                "label": "DR Oznaka",
+                "code": "DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PLA PS ID",
+                "code": "PLA_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "PLA Godina",
+                "code": "PLA_GODINA",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            },
+            {
+                "label": "PLA Broj Plasmana",
+                "code": "PLA_BROJ_PLASMANA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "PPL Redni broj",
+                "code": "PPL_RBR",
+                "primary_key": true,
+                "type": "decimal",
+                "max_lenght": 4.0,
+                "required": true
+            },
+            {
+                "label": "SOF DR Oznaka",
+                "code": "SOF_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "POS PS ID",
+                "code": "POS_PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "SPR KATBR",
+                "code": "SPR_KATBR",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 10,
+                "required": true
+            },
+            {
+                "label": "SPR Tip",
+                "code": "SPR_TIP",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 1,
+                "required": true
+            },
+            {
+                "label": "VER Oznaka",
+                "code": "VER_OZNAKA",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "KONF ID",
+                "code": "KONF_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "POS DR Oznaka",
+                "code": "POS_DR_OZNAKA",
+                "primary_key": true,
+                "type": "str",
+                "max_lenght": 4,
+                "required": true
+            },
+            {
+                "label": "PS ID",
+                "code": "PS_ID",
+                "primary_key": true,
+                "type": "int",
+                "max_lenght": null,
+                "required": true
+            },
+            {
+                "label": "Planiramo",
+                "code": "PPL_PLANIRANO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            },
+            {
+                "label": "Realizovano",
+                "code": "PPL_REALIZOVANO",
+                "primary_key": false,
+                "type": "date",
+                "max_lenght": null,
+                "required": false
+            }
+        ],
+        "linked_keys": [
+            {
+                "title": "Plasman konfiguracije",
+                "name": "plasman_konfiguracije",
+                "foreign_key": ["DR_OZNAKA", "PLA_PS_ID", "PLA_GODINA", "PLA_BROJ_PLASMANA"],
+                "primary_key": ["DR_OZNAKA", "PS_ID", "PLA_GODINA", "PLA_BROJ_PLASMANA"]
+            },
+            {
+                "title": "Konfiguracija",
+                "name": "konfiguracija",
+                "foreign_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA", "KONF_ID"],
+                "primary_key": ["SOF_DR_OZNAKA", "POS_PS_ID", "SPR_KATBR", "SPR_TIP", "VER_OZNAKA", "KONF_ID"]
+            },
+            {
+                "title": "Poslovni subjekat",
+                "name": "poslovni_subjekat",
+                "foreign_key": ["POS_DR_OZNAKA", "PS_ID"],
+                "primary_key": ["DR_OZNAKA", "PS_ID"]
+            }
+        ]
+    }
+]

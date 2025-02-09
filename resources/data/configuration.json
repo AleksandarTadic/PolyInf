@@ -1,0 +1,12 @@
+{
+    "title": "Rukovalac heterogenim skladi\u0161tima",
+    "core_version": "1.0.0",
+    "icon": "resources/icons/dokument.png",
+    "window_size": {
+        "width": 1603,
+        "height": 869,
+        "maximized": true
+    },
+    "plugins_path": "plugins",
+    "context_path": "resources/data/context.json"
+}

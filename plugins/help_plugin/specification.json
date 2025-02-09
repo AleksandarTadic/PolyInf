@@ -1,0 +1,14 @@
+{
+    "id": 987654321,
+    "name": "Help and info",
+    "authors": [{
+        "name": "Aleksandra Mitrovic",
+        "email": "amitrovic@singidunum.ac.rs",
+        "web_page": "https://gitlab.com/aleksandramitrovic"
+    }],
+    "version": "1.0.0",
+    "core_version": "1.0.0",
+    "category": "editor",
+    "description": "This component shows informations about the aplication such as developers and web page of the documentation and help.",
+    "web_page": "https://gitlab.com/aleksandramitrovic/mrs-2022-rukovalac-dokumentima"
+}

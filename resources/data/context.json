@@ -1,0 +1,77 @@
+{
+    "activated_plugins": [
+        987654321,
+        1235
+    ],
+    "workspace_contexts": {
+        "TAB_WIDGETS": {
+            "current_index": 0,
+            "tab_widgets": [
+                {
+                    "credentials": {
+                        "database": "2023_nosql_baza_cinjenica",
+                        "host": "localhost",
+                        "password": "root",
+                        "port": 3306,
+                        "user": "root"
+                    },
+                    "data_info": {
+                        "type": "MYSQL",
+                        "name": "poslovni_subjekat",
+                        "title": "Poslovni subjekat",
+                        "display": "Table",
+                        "icon": "resources/icons/mysql.png"
+                    }
+                },
+                {
+                    "credentials": {
+                        "database": "2023_nosql_baza_cinjenica",
+                        "host": "localhost",
+                        "password": "root",
+                        "port": 3306,
+                        "user": "root"
+                    },
+                    "data_info": {
+                        "type": "MYSQL",
+                        "name": "ugovori_o_angazovanju",
+                        "title": "Ugovori o anga\u017eovanju",
+                        "display": "Table",
+                        "icon": "resources/icons/mysql.png"
+                    }
+                },
+                {
+                    "credentials": {
+                        "database": "2023_nosql_baza_cinjenica",
+                        "host": "localhost",
+                        "password": "root",
+                        "port": 3306,
+                        "user": "root"
+                    },
+                    "data_info": {
+                        "type": "MYSQL",
+                        "name": "ljudski_resursi",
+                        "title": "Ljudski resursi",
+                        "display": "Table",
+                        "icon": "resources/icons/mysql.png"
+                    }
+                },
+                {
+                    "credentials": {
+                        "database": "2023_nosql_baza_cinjenica",
+                        "host": "localhost",
+                        "password": "root",
+                        "port": 3306,
+                        "user": "root"
+                    },
+                    "data_info": {
+                        "type": "MYSQL",
+                        "name": "drzava",
+                        "title": "Drzava",
+                        "display": "Table",
+                        "icon": "resources/icons/mysql.png"
+                    }
+                }
+            ]
+        }
+    }
+}

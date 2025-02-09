@@ -1,0 +1,28 @@
+{
+    "Naziv" : "Plasman i  održavanje softvera",
+    "opis dokumenta":"Pregled svih isporucenih softverskih prizvoda zadatog tipa koji su isporuceni van drzave softverske kompanije",
+    "Opis zadatka" : "Definisati document koji sadrži pregled softverskih proizvoda zadatog tipa isporučenih od strane zadate softverske kompanije na tržišta van njene države sedišta.",
+    "drzava kompanije": "<p1>",
+    "Kompanija" : "<p2>",
+    "Tip" : "<p3>",
+    "Plasirani van trzista drzave" : "<p1>.dr_naziv",
+    "Isporuceno" : [
+        {
+            "Naziv": "<p1><p2>.softverski_proizvod.SPR_NAZIV",
+            "Kataloski broj" : "SPR_KATBR",
+            "Oznaka verzije" : "VER_OZNAKA",
+            "Plasman konfiguracije" : {
+                "Poslovna godina" : "PLA_GODINA",
+                "Broj plasmana" : "PLA_BROJ_PLASMANA",
+                "Investitor drzava" : "POS_DR_OZNAKA",
+                "Datum ugovora" : "PLA_DATUM_UG"
+            },
+            "Redni broj" : "PPL_RBR",
+            "Planirano" : "PPL_PLANIRANO",
+            "Realizovano" : "PPL_REALIZOVANO",
+            "Adresa" : "PS_ADRESA",
+            "Web adresa" : "PS_WWW"
+        }
+    ],
+    "datum" : "<datum>"
+}
